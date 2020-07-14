@@ -34,7 +34,7 @@ def get_japanese_emoticon(file, western_emoji)
         if(emoji == western_emoji)
           emoji_id = key
         end 
-        if(emoji_id == key && language == 'japanese')
+        if(emoji_id == key && language == :japanese)
           target = emoji
         end 
       end
