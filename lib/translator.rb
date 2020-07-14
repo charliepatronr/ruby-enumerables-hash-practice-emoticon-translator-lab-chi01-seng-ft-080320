@@ -8,16 +8,16 @@ def load_library(file)
     if(!final_hash[key])
       final_hash[key] ={}
     end 
-    if(!final_hash[key]["english"])
-      final_hash[key]['english'] = value[0]
+    if(!final_hash[key][:english])
+      final_hash[key][:english] = value[0]
     end 
     # final_hash[key]["english"].push(value[0])
     
     if(!final_hash[key])
       final_hash[key] ={}
     end 
-    if(!final_hash[key]["japanese"])
-      final_hash[key]['japanese'] = value[1]
+    if(!final_hash[key][:japanese])
+      final_hash[key][:japanese] = value[1]
     end 
     # final_hash[key]["japanese"].push(value[1])
   end 
