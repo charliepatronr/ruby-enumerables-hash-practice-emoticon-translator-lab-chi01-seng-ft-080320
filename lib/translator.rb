@@ -21,7 +21,7 @@ def load_library(file)
     end 
     # final_hash[key]["japanese"].push(value[1])
   end 
-   result
+   pp result
 end
 
 
