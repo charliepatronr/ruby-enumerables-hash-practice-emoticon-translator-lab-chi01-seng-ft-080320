@@ -46,10 +46,12 @@ def get_english_meaning(file, japanese_emoji)
     emojis_hash = load_library(file)
     emoji_id = ''
     target ="Sorry, that emoticon was not found"
+    
     emojis_hash.each do |key, value|
       value.each do |language, emoji|
         if(emoji == japanese_emoji)
           emoji_id = key
+        end
         #   binding.pry
         # end 
         # if(emoji_id == key && language == 'english')
