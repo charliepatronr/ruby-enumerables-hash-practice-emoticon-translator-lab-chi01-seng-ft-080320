@@ -50,11 +50,11 @@ def get_english_meaning(file, japanese_emoji)
       value.each do |language, emoji|
         if(emoji == japanese_emoji)
           emoji_id = key
-          binding.pry
-        end 
-        if(emoji_id == key && language == 'english')
-          target = language
-        end 
+        #   binding.pry
+        # end 
+        # if(emoji_id == key && language == 'english')
+        #   target = language
+        # end 
       end
     end 
   pp target
