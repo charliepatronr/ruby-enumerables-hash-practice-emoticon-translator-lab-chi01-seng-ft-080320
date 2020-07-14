@@ -11,7 +11,6 @@ def load_library(file)
     if(!final_hash[key][:english])
       final_hash[key][:english] = value[0]
     end 
-    # final_hash[key]["english"].push(value[0])
     
     if(!final_hash[key])
       final_hash[key] ={}
@@ -19,7 +18,6 @@ def load_library(file)
     if(!final_hash[key][:japanese])
       final_hash[key][:japanese] = value[1]
     end 
-    # final_hash[key]["japanese"].push(value[1])
   end 
    pp result
 end
@@ -52,11 +50,6 @@ def get_english_meaning(file, japanese_emoji)
         if(emoji == japanese_emoji)
           target = key
         end
-        #   binding.pry
-        # end 
-        # if(emoji_id == key && language == 'english')
-        #   target = language
-        # end 
       end
     end 
   pp target
